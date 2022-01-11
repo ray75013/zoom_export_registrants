@@ -54,7 +54,7 @@ foreach ($meeting as $m)
 <?php
 foreach ($meeting as $m)
 	{
-		echo "<tr><td>".$m['start_time']."</td><td>".$m['topic']."</td><td><a href='/zoom/get_registrants.php?compte=".$compte."&id_meeting=".$m['id']."'>".count($meeting_registrants[$m['id']])."</a></td><tr>";
+		echo "<tr><td>".$m['start_time']."</td><td>".$m['topic']."</td><td><a href='get_registrants.php?compte=".$compte."&id_meeting=".$m['id']."'>".count($meeting_registrants[$m['id']])."</a></td><tr>";
 	}
 		
 ?>
