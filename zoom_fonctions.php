@@ -2,8 +2,8 @@
 
 function zoom_request($url,$compte)
 {
-	if ($compte=='info') $jwt = file_get_contents('jwt_info.txt');
-	if ($compte=='spc') $jwt = file_get_contents('jwt.txt');
+	 $jwt = file_get_contents('jwt_'.$compte.'.txt');
+	
 
 
 
